@@ -433,19 +433,19 @@
 
                                         <div className="border-t border-green-200 pt-4">
                                             <label className="block text-sm font-semibold mb-2">Counted Quantity</label>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-stretch">
                                                 <input
                                                     type="number"
                                                     value={quantity}
                                                     onChange={(e) => setQuantity(e.target.value)}
                                                     onKeyPress={(e) => e.key === 'Enter' && handleAddCount()}
                                                     placeholder="Enter quantity"
-                                                    className="flex-1 p-3 border-2 border-gray-300 rounded-lg text-lg"
+                                                    className="w-32 p-3 border-2 border-gray-300 rounded-lg text-lg"
                                                     min="1"
                                                 />
                                                 <button
                                                     onClick={handleAddCount}
-                                                    className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-bold"
+                                                    className="flex-1 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-bold"
                                                 >
                                                     Add
                                                 </button>
